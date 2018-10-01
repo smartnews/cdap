@@ -22,7 +22,19 @@
     },
     "favicon-path": "/cdap_assets/img/favicon.png",
     "footer-text": "Licensed under the Apache License, Version 2.0",
-    "footer-link": "https://www.apache.org/licenses/LICENSE-2.0"
+    "footer-link": "https://www.apache.org/licenses/LICENSE-2.0",
+    "feature-names": {
+      "analytics": "Analytics",
+      "control-center": "Control Center",
+      "dashboard": "Dashboard",
+      "data-prep": "Preparation",
+      "entities": "Entities",
+      "hub": "Hub",
+      "metadata": "Metadata",
+      "pipelines": "Pipelines",
+      "reports": "Reports",
+      "rules-engine": "Rules"
+    }
   },
   "features": {
     "dashboard": true,

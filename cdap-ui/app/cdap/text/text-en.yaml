@@ -357,7 +357,7 @@ features:
       errorMessage: Page {pageNum} not found
       suggestionMessage1: "Go back to:"
       suggestionMessage2: Page 1
-    Title: '{productName} | Control Center'
+    Title: '{productName} | {featureName}'
   DataPrepServiceControl:
     btnLabel: Enable Data Preparation
     btnLoadingLabel: "Enabling..."
@@ -964,7 +964,7 @@ features:
         variableNamePlaceholder: Enter counter name
       Swap:
         title: Swap two column names
-    pageTitle: '{productName} | Data Preparation {workspaceUri}'
+    pageTitle: '{productName} | {featureName} {workspaceUri}'
     PipelineError:
       bigquery: Unable to find Google BigQuery plugin. Please install Google Cloud Plugins from Hub.
       database: Unable to find Database Plugins. Please make sure Database Plugins are available.
@@ -1299,7 +1299,7 @@ features:
       moreInfo: for more info
       nextSelect: Next, select a machine learning algorithm
       numDirectives: "No of directives: "
-      pageTitle: '{productName} | Analytics | {experimentIdWithSuffix}'
+      pageTitle: '{productName} | {featureName} | {experimentIdWithSuffix}'
       random: Random
       selectMLAlgorithm: Select a machine learning algorithm
       selectOutcome: Select an outcome
@@ -1342,7 +1342,7 @@ features:
       modelTrainingLogs: Model training logs
       numModels: No of models
       outcome: Outcome
-      pageTitle: '{productName} | Analytics | {experiment_name}'
+      pageTitle: '{productName} | {featureName} | {experiment_name}'
       precision: Precision
       r2: R2
       recall: Recall
@@ -1357,8 +1357,8 @@ features:
         1: "{context} experiment"
         _: "{context} experiments"
       numModels: No of models
-      pageTitle: '{productName} | Analytics | All Experiments'
-    pageTitle: '{productName} | Analytics'
+      pageTitle: '{productName} | {featureName} | All Experiments'
+    pageTitle: '{productName} | {featureName}'
     ServiceControl:
       Benefits:
         b1: Intuitive Web UI for building, training, testing and evaluating machine learning models.
@@ -1668,20 +1668,15 @@ features:
 
   NUX:
     ControlCenter:
-      text: Control Center allows you to create, manage, operate, and monitor datasets and applications.
-      title: Control Center
+      text: "{featureName} allows you to create, manage, operate, and monitor datasets and applications."
     Hub:
-      text: The Hub allows administrators to distribute re-usable pipelines, applications, plugins, and solutions to all {productName} users in their organizations.
-      title: Hub
+      text: "The {featureName} allows administrators to distribute re-usable pipelines, applications, plugins, and solutions to all {productName} users in their organizations."
     Metadata:
-      text: Metadata enables data discovery through search, and data governance through lineage.
-      title: Metadata
+      text: "{featureName} enables data discovery through search, and data governance through lineage."
     Pipelines:
-      text: Pipelines enable you to create, schedule, and manage complex data processing workflows (both batch and realtime) using an intuitive UI.
-      title: Pipelines
+      text: "{featureName} enable you to create, schedule, and manage complex data processing workflows (both batch and realtime) using an intuitive UI."
     Preparation:
-      text: Preparation allows you to easily connect to a variety of data sources and cleanse data using point and click interactions. Once you are satisfied, you can operationalize your transformations in a pipeline.
-      title: Preparation
+      text: "{featureName} allows you to easily connect to a variety of data sources and cleanse data using point and click interactions. Once you are satisfied, you can operationalize your transformations in a pipeline."
     Welcome:
       close: No, Thanks
       header: Welcome to {productName}
@@ -1691,7 +1686,7 @@ features:
 
   OpsDashboard:
     header: Dashboard
-    pageTitle: '{productName} | Dashboard'
+    pageTitle: '{productName} | {featureName}'
     RunsGraph:
       chart: Chart
       disabledArrowTooltip: The runs timelime is only available for the past 7 days
@@ -2200,7 +2195,7 @@ features:
         select: Select time
         timeRange: "{startTime} to {endTime}"
     header: Reports
-    pageTitle: '{productName} | Reports'
+    pageTitle: '{productName} | {featureName}'
     reportName: Report name
     reports:
       1: "{context} report"
@@ -2330,7 +2325,7 @@ features:
       owner: Owner
       version: Version {version}
     Home:
-      pageTitle: '{productName} | Rules Engine'
+      pageTitle: '{productName} | {featureName}'
       Tabs:
         rbTitle: RuleBooks
         rulesTitle: Rules

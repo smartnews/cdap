@@ -42,11 +42,13 @@ export default class OpsDashboard extends Component {
   }
 
   render() {
+    const featureName = Theme.featureNames.dashboard;
     return (
       <Provider store={DashboardStore}>
         <div className="ops-dashboard">
           <Helmet title={T.translate(`${PREFIX}.pageTitle`, {
             productName: Theme.productName,
+            featureName
           })} />
           <div className="header clearfix">
             <div className="links float-xs-left">

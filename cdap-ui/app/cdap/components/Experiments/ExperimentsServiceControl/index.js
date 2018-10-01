@@ -139,10 +139,12 @@ export default class ExperimentsServiceControl extends Component {
   }
 
   render() {
+    const featureName = Theme.featureNames.analytics;
     return (
       <div className="experiments-service-control">
         <Helmet title={T.translate(`${EXPERIMENTS_I18N_PREFIX}.pageTitle`, {
           productName: Theme.productName,
+          featureName
         })} />
         <div className="image-containers">
           <img className="img-thumbnail" src="/cdap_assets/img/MMDS_preview1.png" />

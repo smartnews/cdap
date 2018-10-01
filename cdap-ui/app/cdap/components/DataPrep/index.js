@@ -280,7 +280,7 @@ export default class DataPrep extends Component {
         </div>
       );
     }
-    const featureName = Theme.featureNames.reports;
+    const featureName = Theme.featureNames.dataPrep;
     return (
       <div className={classnames('dataprep-container', {
         'single-workspace': this.props.singleWorkspaceMode

@@ -492,6 +492,8 @@ features:
         TopPanel:
           ListingInfo:
             label: "{dirsCount} directories and {filesCount} files"
+            truncatedLabel: "{dirsCount} directors and {fileCount} files of many"
+            truncatedContentsTooltip: The bucket you are viewing contains more directories and files we can currently display.
           selectData: Select data
       SpannerBrowser:
         databaseCount:

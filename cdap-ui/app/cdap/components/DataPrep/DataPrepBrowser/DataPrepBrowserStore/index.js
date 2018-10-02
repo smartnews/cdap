@@ -99,6 +99,7 @@ const defaultS3Value = {
   info: {},
   loading: false,
   activeBucketDetails: [],
+  truncated: false,
   prefix: '',
   connectionId: '',
   search: ''
@@ -282,6 +283,7 @@ const s3 = (state = defaultS3Value, action = defaultAction) => {
       return {
         ...state,
         activeBucketDetails: action.payload.activeBucketDetails,
+        truncated: action.payload.truncated,
         loading: false
       };
     case Actions.SET_S3_PREFIX:
